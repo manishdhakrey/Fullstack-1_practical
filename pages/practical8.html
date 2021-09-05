@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical-8</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      #container-Banner {
+        width: 100%;
+        margin: 0;
+      }
+      #container-circle {
+        width: 100%;
+        margin-top: 150px;
+      }
+      #sec2-container::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      #left-side {
+        width: 50%;
+        height: 550px;
+        background-color: gray;
+        float: left;
+        color: #fff;
+        display: flex;
+
+        font-size: 40px;
+        color: white;
+      }
+      #left-p > h2 {
+        text-align: left;
+        margin: 10px 5px;
+      }
+
+      #left-p > p {
+        font-size: 20px;
+        padding: 10px;
+        text-align: justify;
+        line-height: 28px;
+      }
+      #right-side {
+        width: 48%;
+        height: 550px;
+        float: right;
+        background-color: white;
+      }
+      #container-Footer {
+        width: 100%;
+        margin: 15px auto;
+      }
+      .menu {
+        background-color: gray;
+        text-align: center;
+        position: fixed;
+        width: 1350px;
+        margin-bottom: 10px;
+      }
+      .menu ul {
+        list-style: none;
+        display: inline-flex;
+      }
+      .menu ul li {
+        width: 150px;
+        margin-right: 100px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 5px;
+      }
+      .menu ul li a {
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .menu ul li a:hover {
+        color: black;
+      }
+      .menu ul li :hover {
+        background-color: white;
+      }
+      .Banner {
+        height: 600px;
+        width: 1349px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .text {
+        position: absolute;
+        top: 70px;
+        left: 5px;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .text_1 {
+        position: absolute;
+        bottom: 50;
+        right: 50;
+      }
+      .circle img {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        background-color: white;
+        float: left;
+        margin-left: 75px;
+      }
+      .artical {
+        height: 31%;
+        margin-bottom: 20px;
+        background-color: chocolate;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        overflow: hidden;
+      }
+      .box {
+        width: 20%;
+        float: left;
+        margin: 20px 15px;
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+      }
+      .box img {
+        width: 100%;
+        border-radius: 8px;
+        margin-top: 10px;
+      }
+      .box h4 {
+        text-align: center;
+        margin: 10px 10px;
+      }
+      .box p {
+        margin: 10px;
+        font-size: 15;
+        text-align: justify;
+        line-height: 25px;
+      }
+      .box a {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+        background-color: red;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 8px;
+      }
+      .box a:hover {
+        background-color: blue;
+      }
+      .Footer {
+        height: 75px;
+        width: 1250px;
+        background-color: pink;
+        margin-left: 75px;
+      }
+      .Footer > p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <ul>
+        <li><a href="#top">HOME</a></li>
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#container-circle">TEAM</a></li>
+        <li><a href="#Technologies Used">TECHNOLOGIES</a></li>
+        <li><a href="#CONTACT">CONTACT</a></li>
+      </ul>
+    </div>
+    <div id="container-Banner">
+      <div class="Banner">
+        <img
+          src="/Downloads/IMG.jpg"
+          alt=""
+          width="1349px"
+        />
+        <div class="text">
+          <h1>PRACTICAL-8</h1>
+        </div>
+      </div>
+    </div>
+    <div id="container-circle">
+      <h1
+        style="
+          text-align: center;
+          font-size: 40px;
+          padding: 25px 0px;
+          color: black;
+        "
+      >
+        TEAM MEMBERS
+      </h1>
+      <div class="circle">
+        <img src="/Downloads/first.png" alt="" />
+      </div>
+      <div class="circle">
+        <img src="/Downloads/second.png" alt="" />
+      </div>
+      <div class="circle">
+        <img src="/Downloads/third.png" alt="" />
+      </div>
+      <div class="circle">
+        <img src="/Downloads/fourth.png" alt="" />
+      </div>
+    </div>
+    <div id="sec2-container">
+      <a name="about"></a>
+      <h1
+        style="
+          text-align: center;
+          font-size: 40px;
+          padding: 25px 0px;
+          color: black;
+        "
+      >
+        ABOUT US
+      </h1>
+      <div id="left-side">
+        <div class="left-content">
+          <div id="left-p">
+            <h2>About Projects</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              cumque maxime veniam. Sequi voluptatum corporis perspiciatis ut
+              adipisci incidunt, nostrum quae delectus doloremque eveniet
+              deleniti repellat repellendus aperiam ipsam eligendi, laudantium
+              necessitatibus harum at. Culpa aliquid facilis nobis ipsam
+              corrupti. Nisi, fuga quia quibusdam placeat incidunt non odit
+              suscipit nesciunt architecto. Numquam dicta facere eos nisi nihil
+              ducimus impedit laudantium laborum obcaecati? Enim fugiat facere,
+              aliquam dolore repellat ipsam natus eaque commodi architecto
+              provident aliquid delectus consectetur perferendis fuga deleniti
+              corrupti quaerat necessitatibus. Repellendus at non numquam, animi
+              explicabo reiciendis similique itaque rem ipsa officia
+              exercitationem beatae omnis, veritatis tempora temporibus
+              consequuntur praesentium velit iusto dicta tenetur tempore ex
+              quos! Accusantium est nisi aliquid, possimus deserunt illo
+              repellat deleniti consequatur quae fuga quibusdam inventore earum
+              ut consectetur doloremque ipsa incidunt delectus voluptatem
+              ratione illum perspiciatis ullam quis. Voluptatibus,
+              exercitationem. Dolores, quae ratione. Distinctio harum ratione
+              magni quis temporibus voluptates natus inventore
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="right-side">
+        <div class="artical">
+          <img
+            src="/Downloads/pr_1.jpg"
+            alt=""
+            style="width: 700px"
+          />
+          <div class="text_1">
+            <h2>Project-1</h2>
+          </div>
+        </div>
+        <div class="artical">
+          <img
+            src="/Downloads/pr_2.jpg"
+            alt=""
+            style="width: 700px"
+          />
+          <div class="text_1">
+            <h2>Project-2</h2>
+          </div>
+        </div>
+        <div class="artical">
+          <img
+            src="/Downloads/pr_4.png"
+            alt=""
+            style="width: 700px"
+          />
+          <div class="text_1">
+            <h2>Project-3</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <a name="Technologies Used"></a>
+      <h1
+        style="
+          text-align: center;
+          font-size: 40px;
+          padding: 25px 0px;
+          color: black;
+          margin-top: 10px;
+        "
+      >
+        Technologies Used
+      </h1>
+      <div class="box">
+        <img src="/Downloads/html.png" alt="" />
+        <h4>Introduction to HTML</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quas
+          dolore magnam, tenetur voluptate nihil eligendi sed voluptates atque
+          perspiciatis beatae recusandae nemo distinctio rerum iure unde
+          mollitia placeat reprehenderit.
+        </p>
+        <a href="./practical-5-html.html">Read more</a>
+      </div>
+
+      <div class="box">
+        <img src="/Downloads/css.png" alt="" />
+        <h4>Introduction to CSS</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quas
+          dolore magnam, tenetur voluptate nihil eligendi sed voluptates atque
+          perspiciatis beatae recusandae nemo distinctio rerum iure unde
+          mollitia placeat reprehenderit.
+        </p>
+        <a href="./practical-5-css.html">Read more</a>
+      </div>
+
+      <div class="box">
+        <img src="/Downloads/jquery.png" alt="" />
+        <h4>Introduction to JAVASCRIPT</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quas
+          dolore magnam, tenetur voluptate nihil eligendi sed voluptates atque
+          perspiciatis beatae recusandae nemo distinctio rerum iure unde
+          mollitia placeat reprehenderit.
+        </p>
+        <a href="./practical-5-javascript.html">Read more</a>
+      </div>
+
+      <div class="box">
+        <img src="/Downloads/bootstrap.jpg" alt="" />
+        <h4>Introduction to BOOTSTRAP</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quas
+          dolore magnam, tenetur voluptate nihil eligendi sed voluptates atque
+          perspiciatis beatae recusandae nemo distinctio rerum iure unde
+          mollitia placeat reprehenderit.
+        </p>
+        <a href="./practical-5-bootstrap.html">Read more</a>
+      </div>
+    </div>
+    <a name="CONTACT"></a>
+    <h1
+      style="
+        text-align: center;
+        font-size: 40px;
+        padding: 25px 0px;
+        color: black;
+      "
+    >
+      CONTACT
+    </h1>
+    <div id="container-Footer">
+      <div class="Footer">
+        <p>
+          Website Template for Practical-8 &copy;
+          <a href="https://beta-labs.in">Beta-labs</a><br /><br />
+          <a href="#top">Back to top</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
