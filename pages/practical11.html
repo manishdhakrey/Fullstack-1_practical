@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Practical-11</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .heading {
+      color: blue;
+      text-align: center;
+      padding: 15px;
+      font-size: 25px;
+    }
+    .footer {
+      background-color: #26272b;
+      width: 100%;
+      height: 450px;
+
+    }
+    .section1 {
+      color: white;
+      display: flex;
+      border-bottom: 2px solid gray;
+      padding-bottom: 50px;
+    }
+    .about {
+      width: 45%;
+    }
+    .about p{
+        text-align: justify;
+        color: gray;
+        margin-right: 30px;
+        line-height: 25px;
+    }
+    .link1 {
+      width: 20%;
+    }
+    .link1 ul{
+        list-style: none;
+    }
+    .link1 ul li{
+        line-height: 24px;
+    }
+    .link1 ul li a{
+        color: gray;
+    }
+    .link1 ul li a:hover{
+        color: greenyellow;
+    }
+    .link2 {
+      width: 20%;
+    }
+    .link2 ul{
+        list-style: none;
+    }
+    .link2 ul li{
+        line-height: 24px;
+    }
+    .link2 ul li a{
+        color: gray;
+    }
+    .link2 ul li a:hover{
+        color: greenyellow;
+    }
+    .link3 {
+      width: 20%;
+    }
+    .link3 ul{
+        list-style: none;
+    }
+    .link3 ul li{
+        line-height: 24px;
+    }
+    .link3 ul li a{
+        color: gray;
+    }
+    .link3 ul li a:hover{
+        color: greenyellow;
+    }
+    .section2{
+        border-bottom: 2px solid gray;
+        padding-bottom: 20px;
+    }
+    .section2 h3 span{
+        display:inline-flex;
+        border-radius: 30px;
+        color: white;
+        background-color: orange;
+    }
+    .section2 h3 span:hover{
+        background-color: yellowgreen;
+    }
+    .section3{
+        padding-left: 500px;
+        padding-top: 30px;
+    }
+    .section3 {
+        display: flex;
+        justify-content: center;
+        padding: 20px 10px;
+    }
+    .section3 ul {
+        list-style: none;
+    }
+    .section3 ul li {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        padding: 20px;
+        background-color: #424242;
+        border-radius: 20px;
+        margin-right: 20px;
+    }
+    .section3 ul li i {
+        color: white;
+        font-size: 24px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .section3 ul li:nth-child(1):hover {
+        background-color: #3b5999;
+    }
+    .section3 ul li:nth-child(2):hover {
+        background-color: #55acee;
+    }
+    .section3 ul li:nth-child(3):hover {
+        background-color: #dd4b39;
+    }
+    .section3 ul li:nth-child(4):hover {
+        background-color: #0077b5;
+    }
+    .section3 ul li:nth-child(5):hover {
+        background-color: #ea4c89;
+    }
+    .section4{
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        background-color: black;
+    }
+    .section4 p{
+        color: gray;
+    }
+    .section4 p a{
+        color: gray;
+    }
+    .section4 p a:hover{
+        color: yellowgreen;
+    }
+
+    @media(max-width: 800px){
+    .heading {
+      color: blue;
+      text-align: center;
+      padding: 15px;
+      font-size: 25px;
+    }
+    .footer {
+      background-color: #26272b;
+      width: 100%;
+      height: 100%;
+    }
+    .section1 {
+      color: white;
+      display: flex;
+      border-bottom: 2px solid gray;
+      padding-bottom: 50px;
+      flex-wrap: wrap;
+    }
+    .about {
+      width: 100%;
+    }
+    .about p{
+        text-align: justify;
+        color: gray;
+        margin-right: 30px;
+        line-height: 25px;
+    }
+    .link1 {
+      width: 20%;
+      padding-right: 50px;
+    }
+    .link1 ul{
+        list-style: none;
+    }
+    .link1 ul li{
+        line-height: 24px;
+    }
+    .link1 ul li a{
+        color: gray;
+    }
+    .link1 ul li a:hover{
+        color: greenyellow;
+    }
+    .link2 {
+      width: 20%;
+      padding-right: 50px;
+    }
+    .link2 ul{
+        list-style: none;
+    }
+    .link2 ul li{
+        line-height: 24px;
+    }
+    .link2 ul li a{
+        color: gray;
+    }
+    .link2 ul li a:hover{
+        color: greenyellow;
+    }
+    .link3 {
+      width: 20%;
+    }
+    .link3 ul{
+        list-style: none;
+    }
+    .link3 ul li{
+        line-height: 24px;
+    }
+    .link3 ul li a{
+        color: gray;
+    }
+    .link3 ul li a:hover{
+        color: greenyellow;
+    }
+    .section2{
+        border-bottom: 2px solid gray;
+        padding-bottom: 20px;
+    }
+    .section2 h3 span{
+        display:inline-flex;
+        border-radius: 30px;
+        color: white;
+        background-color: orange;
+    }
+    .section2 h3 span:hover{
+        background-color: yellowgreen;
+    }
+    .section3{
+        padding-left: 500px;
+        padding-top: 30px;
+    }
+    .section3 {
+        display: flex;
+        justify-content: center;
+        padding: 20px 10px;
+    }
+    .section3 ul {
+        list-style: none;
+    }
+    .section3 ul li {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        padding: 20px;
+        background-color: #424242;
+        border-radius: 20px;
+        margin-right: 20px;
+    }
+    .section3 ul li i {
+        color: white;
+        font-size: 24px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .section3 ul li:nth-child(1):hover {
+        background-color: #3b5999;
+    }
+    .section3 ul li:nth-child(2):hover {
+        background-color: #55acee;
+    }
+    .section3 ul li:nth-child(3):hover {
+        background-color: #dd4b39;
+    }
+    .section3 ul li:nth-child(4):hover {
+        background-color: #0077b5;
+    }
+    .section3 ul li:nth-child(5):hover {
+        background-color: #ea4c89;
+    }
+    .section4{
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        background-color: black;
+    }
+    .section4 p{
+        color: gray;
+    }
+    .section4 p a{
+        color: gray;
+    }
+    .section4 p a:hover{
+        color: yellowgreen;
+    }
+    }
+    
+  </style>
+  <body>
+    <div class="heading">
+      <h1>RESPONSIVE FOOTER BAR</h1>
+    </div>
+    <div class="footer">
+      <div class="section1">
+        <div class="about">
+          <h3 style="margin-bottom: 10px;margin-top: 20px;">ABOUT</h3>
+          <p>
+            Betalabs.in CODE WANTS TO BE SIMPLE is an initiative to help the
+            upcoming programmers with the code. Beta-Labs focuses on providing
+            the most efficient code or snippets as the code wants to be simple.
+            We will help programmers build up concepts in different programming
+            languages that include C, C++, Java, HTML, CSS, Bootstrap,
+            JavaScript, PHP, Android, SQL and Algorithm.
+          </p>
+        </div>
+        <div class="link1">
+          <h3 style="margin-bottom: 10px;margin-top: 20px;">CATEGORIES</h3>
+          <ul>
+              <li><a href="#">C</a></li>
+              <li><a href="#">UI DESIGN</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">JAVA</a></li>
+              <li><a href="#">ANDROID</a></li>
+              <li><a href="#">TEMPLETES</a></li>
+          </ul>
+        </div>
+        <div class="link2">
+          <h3 style="margin-bottom: 10px;margin-top: 20px;">QUICK LINKS</h3>
+          <ul>
+              <li><a href="#">ABOUT US</a></li>
+              <li><a href="#">CONTACT US</a></li>
+              <li><a href="#">CONTRIBUTE</a></li>
+              <li><a href="#">PRIVACY POLICY</a></li>
+              <li><a href="#">SITE MAP</a></li>
+              <li><a href="#">SETTING</a></li>
+        </div>
+        <div class="link3">
+          <h3 style="margin-bottom: 10px;margin-top: 20px;">CONTACT US</h3>
+          <ul>
+              <li><a href="#"><i class="fa fa-home"><span>SCO-25 Chandigarh,India</span></i></a></li>
+              <li><a href="#"><i class="fa fa-envelope"><span>betalabsindia@gmail.com</span></i></a></li>
+              <li><a href="#"><i class="fa fa-mobile"><span>Mobile:9873957263</span></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook-official"><span>betalabsindia</span></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="section2">
+          <h3 style="text-align: center; margin-top: 20px; color: gray; font-size: 30px;">Register For Free <span>Sign Up!</span></h3>
+      </div>
+      <div class="section3">
+        <ul>
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-google"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </li>
+          </ul>
+      </div>
+      <div class="section4">
+          <p>Copyright © 2021 All Rights Reserved by
+            <a href="https://www.beta-labs.in">Beta-Labs.</a></p>
+      </div>
+    </div>
+  </body>
+</html>
