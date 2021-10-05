@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Table</title>
+    <style>
+        *{padding: 0;margin: 0;box-sizing: border-box;}
+        body{
+            min-width: 100%;
+            background-color:lightgrey;
+        }
+        .container{
+            width:600px;
+            background-color: white;
+            padding: 10px;
+            margin: 20px auto;
+        }
+        .custom-table{
+            width: 100%;
+            margin: 0 auto;
+            border: white;
+        }
+        
+        .basic{
+            background-color: #c1dcb7;
+        }
+        .Plus{
+            background-color: #bad6c8;
+        }
+        .Deluxe{
+            background-color: #bbd3dc;
+        }
+        .Pro{
+            background-color: #d5e4bc;
+        }
+        .custom-table td , .custom-table th{
+            width: 150px;
+            padding: 10px;
+        }
+        .custom-table th i{
+            color: blue;
+            font-size: 20px;
+        }
+        .custom-table td{
+            text-align: center;
+        }
+        .custom-table td img{
+            width: 20px;
+            height: 20px;
+        }
+        tbody tr:nth-child(odd)
+        {
+            background-color: wheat;
+        }
+        .signup td :hover{
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;">Select Your Plan</h2>
+        <table class="custom-table" border="1">
+            <colgroup class="basic"></colgroup>
+            <colgroup class="Plus"></colgroup>
+            <colgroup class="Deluxe"></colgroup>
+            <colgroup class="Pro"></colgroup>
+            <tr>
+                <th>
+                    <i class="fa fa-building">Basic</i>
+                </th>
+                <th>
+                    <i class="fa fa-superpowers">Plus</i>
+                </th>
+                <th>
+                    <i class="fa fa-telegram">Deluxe</i>
+                </th>
+                <th>
+                    <i class="fa fa-tachometer">Pro</i>
+                </th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>Rs.500 /-</td>
+                    <td>Rs.1500 /-</td>
+                    <td>Rs.2500 /-</td>
+                    <td>Rs.3500 /-</td>
+                </tr>
+                <tr>
+                    <td>50 Pages</td>
+                    <td>75 Pages</td>
+                    <td>Unlimited</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <td>3 users</td>
+                    <td>5 users</td>
+                    <td>10 users</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <td>10 sites</td>
+                    <td>25 Sites</td>
+                    <td>100 sites /-</td>
+                    <td>unlimited</td>
+                </tr>
+                <tr>
+                    <td>50 MB</td>
+                    <td>250 MB</td>
+                    <td>1 GB</td>
+                    <td>5 GB</td>
+                </tr>
+                <tr>
+                    <td>included</td>
+                    <td>included</td>
+                    <td>included</td>
+                    <td>included</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/Downloads/tick.jpg" alt="">
+                    </td>
+                    <td>
+                        <img src="/Downloads/tick.jpg" alt="">
+                    </td>
+                    <td>
+                        <img src="/Downloads/tick.jpg" alt="">
+                    </td>
+                    <td>
+                        <img src="/Downloads/tick.jpg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/Downloads/cross.jpg" alt="">
+                    </td>
+                    <td>
+                        <img src="/Downloads/tick.jpg" alt="">
+                    </td>
+                    <td>
+                        <img src="/Downloads/tick.jpg" alt="">
+                    </td>
+                    <td>
+                        <img src="/Downloads/tick.jpg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/Downloads/cross.jpg" alt="">
+                    </td>
+                    <td>
+                        <img src="/Downloads/tick.jpg" alt="">
+                    </td>
+                    <td>
+                        <img src="/Downloads/tick.jpg" alt="">
+                    </td>
+                    <td>
+                        <img src="/Downloads/tick.jpg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/Downloads/cross.jpg" alt="">
+                    </td>
+                    <td>
+                        <img src="/Downloads/cross.jpg" alt="">
+                    </td>
+                    <td>
+                        <img src="/Downloads/tick.jpg" alt="">
+                    </td>
+                    <td>
+                        <img src="/Downloads/tick.jpg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/Downloads/cross.jpg" alt="">
+                    </td>
+                    <td>
+                        <img src="/Downloads/cross.jpg" alt="">
+                    </td>
+                    <td>
+                        <img src="/Downloads/cross.jpg" alt="">
+                    </td>
+                    <td>
+                        <img src="/Downloads/tick.jpg" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <div class="signup">
+                        <td style="background-color: purple;color: blue;font-size: 20px;" >Sign Up</td>
+                        <td style="background-color: green;color: blue;font-size: 20px;">Sign Up</td>
+                        <td style="background-color: red;color: blue;font-size: 20px;">Sign Up</td>
+                        <td style="background-color: pink;color: blue;font-size: 20px;">Sign Up</td>
+                    </div>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
